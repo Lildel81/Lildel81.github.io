@@ -1,0 +1,55 @@
+html{
+    background-color: black;
+}
+.flex-container{
+
+    display: flex;
+
+    flex-flow: row wrap;
+
+    justify-content: space-evenly;
+
+    padding: 1;
+    margin: 1;
+    list-style: none;
+}
+
+.flex-item{
+
+    background: lightgreen;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    margin-top: 90px;
+    line-height: 10px;
+    color: black;
+    
+}
+nav{background-color: darkgreen; 
+    color: black; 
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+h1{background-color: chartreuse; 
+    color: black; 
+    border: 1px solid black;
+    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 4px 4px 5px red;
+    
+    ;
+}
+
+p{background-color: darkgreen; 
+    color: black; 
+    border: 1px dotted black;
+    font-size: 19px;
+}
+footer{
+    text-align: right;
+    color: gray;
+}
