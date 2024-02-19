@@ -1,11 +1,36 @@
 .html{
-    background-color: aquamarine;
+    background-color: black;
+}
+
+.flex-container{
+
+    display: flex;
+
+    flex-flow: row wrap;
+
+    justify-content: space-evenly;
+
+    padding: 1;
+    margin: 1;
+    list-style: none;
+}
+
+.flex-item{
+
+    background: black;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    margin-top: -20px;
+    line-height: 10px;
+    color: black;
+    
 }
 
 /*Dropdown button*/
 .equations {
     background-color: #04AA6D;
-    color: white;
+    color: rgb(243, 8, 8);
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -46,7 +71,7 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .equations {background-color: #3e8e41;}
 
-body {background-color: aqua;}
+body {background-color: black;}
 
 h1 {
     color: #fff;

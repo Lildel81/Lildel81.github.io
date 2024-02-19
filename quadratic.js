@@ -6,7 +6,8 @@ function displayText(){
     // Display the value on the webpage
 
     // Building the value of the quotient;
-    
+    let R = (B*B)-(4*A*C);
+    if (R > 0){
     let r = Math.sqrt((B*B)-(4*A*C))
     // Building the Denominator
     let d = 2*A;
@@ -15,6 +16,11 @@ function displayText(){
     let F = ((0-B)+r)/d;
 
     document.getElementById("output").innerText = "The result is " + f + " and " + F; 
+
+    }
+    else {
+        document.getElementById("output").innerText = "This makes an imaginary number and cannot be computed";
+    }
 
     /*let first = (0-B);
     let rad = Math.sqrt(Math.pow(b, 2)-4 * A * C);

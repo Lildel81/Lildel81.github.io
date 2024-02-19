@@ -1,2 +1,2 @@
 let d = new Date();
-document.body.innerHTML = "<h1>Today's Date is " + d + "</h1>"
+document.getElementById("heading").innerHTML = "<h1>Today's Date is " + d + "</h1>"

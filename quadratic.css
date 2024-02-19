@@ -1,6 +1,13 @@
 body{
-    background-color: rgb(88, 228, 238);
+    background-color: black;
+}
+label {
+    color: white
 }
 p{
-    color: black;
+    background-color: black;
+    color: whitesmoke;
+}
+div{
+    color: white;
 }
