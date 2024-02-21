@@ -1,0 +1,137 @@
+html{
+    background-image: url("https://wallpapercave.com/wp/P4LP9H0.jpg");
+    background-size: cover;
+    background-repeat: none;
+}
+
+.flex-container{
+
+    display: flex;
+
+    flex-flow: row wrap;
+
+    justify-content: space-evenly;
+
+    padding: 1;
+    margin: 1;
+    list-style: none;
+}
+
+.flex-item{
+
+    
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    margin-top: -20px;
+    line-height: 10px;
+    color: black;
+    
+}
+.selections{
+    display: flex;
+    flex-flow: wrap-reverse;
+    justify-content: space-evenly;
+}
+/*Dropdown button*/
+.equations {
+    background-color: #04AA6D;
+    color: rgb(243, 8, 8);
+    padding: 16px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+/*The container <div> - needed to position the dropdown content*/
+
+.dropdown {
+    position: center;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+/*Dropdown Content (Hidden by Default) */
+
+.dropdown-content{
+    display: none;
+    position: sticky;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 50px;
+}
+
+/*Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 3px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+/*Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .equations {
+    background-color: #3e8e41;
+    padding: 20px 26px;
+}
+
+.geometric{
+    background-color: #04AA6D;
+    color: rgb(243, 8, 8);
+    padding: 16px;
+    font-size: 16px;
+    text-align: center;
+    
+}
+.dropdownB{
+    position: center;
+    display: inline-block;
+    
+}
+
+.dropdownb-content{
+    display: none;
+    position: sticky;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownb-content a{
+    color: black;
+    padding: 3px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownb-content a:hover{
+    background-color: #ddd;
+}
+
+.dropdownB:hover .dropdownb-content{display: block;}
+.dropdownB:hover .geometric{
+    background-color: #3e8e41;
+    padding: 20px 26px;
+}
+
+
+
+h1 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
