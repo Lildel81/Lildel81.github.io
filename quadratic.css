@@ -1,13 +1,51 @@
 body{
-    background-color: black;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/02/66/34/70/1000_F_266347082_qnZLppWcnm5a4OA5cGNE1amPi01lpEmV.jpg");
+    background-repeat: none;
+    background-size: cover;
+}
+.flex-container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.flex-item{
+
+    
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    margin-top: -20px;
+    line-height: 10px;
+    color: black;
+    
 }
 label {
     color: white
 }
 p{
-    background-color: black;
-    color: whitesmoke;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    color: white;
 }
 div{
     color: white;
+}
+.quadpic{
+display: flex;
+flex-flow: wrap;
+justify-content: space-evenly;
+}
+.info{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    
+}
+.output{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    font-size: large;
 }

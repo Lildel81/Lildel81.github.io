@@ -1,5 +1,7 @@
 html{
-    background-color: black;
+    background-image: url("https://wallpapercave.com/wp/P4LP9H0.jpg");
+    background-size: cover;
+    background-repeat: none;
 }
 .flex-container{
 
@@ -16,26 +18,36 @@ html{
 
 .flex-item{
 
-    background: black;
+    
     padding: 5px;
     width: 150px;
     height: 40px;
-    margin-top: 90px;
+    margin-top: 0px;
     line-height: 10px;
     color: black;
     
 }
-nav{background-color: black; 
+.flex-item a:hover{
+    display: block;
+    background-color: black;
+    height: 50px;
+    margin-top: 10;
+    padding: 5px;
+}
+nav{ 
     color: black; 
-    border: 1px solid black;
+    
     text-align: center;
 
 }
 
-h1{background-color: black; 
+
+
+
+h1{ 
     color: white; 
-    border: 1px solid black;
-    font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';
+   
+    /*font-family: 'Brush Script MT', 'Brush Script Std', 'cursive';*/
     text-transform: capitalize;
     text-align: center;
     font-size: 40px;
@@ -44,10 +56,15 @@ h1{background-color: black;
     ;
 }
 
-p{background-color: black; 
-    color: green; 
-    border: 1px dotted black;
-    font-size: 19px;
+p{ 
+    color: whitesmoke; 
+    
+    font-size: 25px;
+}
+.pictures{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
 }
 footer{
     text-align: right;

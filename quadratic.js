@@ -14,21 +14,20 @@ function displayText(){
     //Building the Formula
     let f = ((0-B)-r)/d;
     let F = ((0-B)+r)/d;
-
-    document.getElementById("output").innerText = "The result is " + f + " and " + F; 
+    var input = document.getElementById("inputTextC");
+    input.addEventListener("keypress", function(event){
+        if (event.key == "Enter") {
+           // event.preventDefault();
+            document.getElementById("myBtn").click();
+        }
+    });
+    document.getElementById("output").style.fontSize = "30px";
+    document.getElementById("output").innerText = "The two roots are " + f + " and " + F; 
 
     }
     else {
         document.getElementById("output").innerText = "This makes an imaginary number and cannot be computed";
     }
 
-    /*let first = (0-B);
-    let rad = Math.sqrt(Math.pow(b, 2)-4 * A * C);
-    let denominator = (2 * A);
-
-    let root1 = (first - rad)/denominator;
-    let root2 = (first + rad)/denominator;
     
-    document.getElementById("R1").innerText = "The first root is " + root1;
-    document.getElementById("R2").innerText = "The second root is " + root2;*/
 }
