@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@codewith_muhilan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="MainStyle.css">
+    <style>
+        body {
+            background-color: #000;
+            /* display: grid;
+            place-content: center; */
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            background-image: url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+          .bouncing-blob {
+            width: 32vw;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            will-change: transform;
+            position: absolute;
+            z-index: 1;
+            left: 0; top: 0;
+            transform-origin: left top;
+          }
+          .bouncing-blob--blue {
+            background: #4783c7;
+          }
+
+
+        .bouncing-blob--light-blue {
+            background: #00fffc;
+            z-index: 2;
+            width: 15vw;
+        }
+
+          .bouncing-blob--purple {
+            background: #8c8ff1;
+          }
+          .bouncing-blob--pink {
+            background: #ff13c850;
+          }
+          .bouncing-blobs-container {
+            position: fixed;
+            z-index: -1;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+        .bouncing-blobs-glass {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(50px);
+            -webkit-backdrop-filter: blur(50px);
+            pointer-events: none;
+        }
+
+        .bouncing-blobs {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        @media (max-width: 1200px) {
+            .bouncing-blobs-glass {
+                backdrop-filter: blur(50px);
+                -webkit-backdrop-filter: blur(50px);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .bouncing-blob {
+                width: 60vw;
+            }
+
+            .bouncing-blob--white {
+                width: 30vw;
+            }
+
+            .bouncing-blobs-glass {
+                backdrop-filter: blur(50px);
+                -webkit-backdrop-filter: blur(50px);
+            }
+        }
+
+        @media(max-width: 500px) {
+            .tutorial-link a {
+                font-size: 14px;
+                padding: 2px 4px;
+            }
+
+            .tutorial-link svg {
+                width: 15px;
+            }
+        }
+
+
+        nav {
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(3px);
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.37);
+            padding-right: 35px;
+            display: flex;
+            justify-content: end;
+        }
+
+        .logo {
+            color: #fff;
+            position: relative;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            left: 50px;
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            justify-content: end;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        ul li {
+            color: #fff;
+            display: grid;
+            place-content: center;
+            margin: 0;
+        }
+          .menu {
+            color: #fff;
+            padding: 0.5rem;
+            position: relative;
+            text-decoration: none;
+          }
+
+        .menu::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            border-radius: 5px;
+            transform: scaleX(0);
+            transition: all .5s ease;
+            bottom: 0;
+            left: 0;
+        }
+
+          .menu:hover::before {
+            transform: scaleX(1);
+          }
+
+        .bi {
+            color: #fff;
+            cursor: pointer;
+            display: grid;
+            place-content: center;
+            font-size: 35px;
+            transition: 1s all;
+        }
+
+/*         
+
+
+        #source-link {
+            top: 120px;
+        }
+
+        #source-link>i {
+            color: rgb(94, 106, 210);
+        }
+
+        #yt-link {
+            top: 65px;
+        }
+
+        #yt-link>i {
+            color: rgb(219, 31, 106);
+
+        }
+
+        #Fund-link {
+            top: 10px;
+        }
+
+        #Fund-link>i {
+            color: rgb(255, 251, 0);
+
+        }
+
+        .meta-link {
+            align-items: center;
+            backdrop-filter: blur(3px);
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            display: inline-flex;
+            gap: 5px;
+            left: 10px;
+            padding: 10px 20px;
+            position: fixed;
+            text-decoration: none;
+            transition: background-color 600ms, border-color 600ms;
+            z-index: 10000;
+        }
+
+        .meta-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .meta-link>i,
+        .meta-link>span {
+            height: 20px;
+            line-height: 20px;
+        }
+
+        .meta-link>span {
+            color: white;
+            font-family: "Rubik", sans-serif;
+            transition: color 600ms;
+        } */
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="cursor: pointer;" fill="currentColor"
+                class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+            </svg>
+        </div>
+        
+        <ul>
+            <li><a href="index.html" class="menu">Home</a> </li>
+            <li><a href="Rylee.html" class="menu">Rylee</a></li>
+            <li><a href="" class="menu">Dinner</a></li>
+            <li><a href="" class="menu">Contacts</a></li>
+            <li><a href="" class="menu">Schedule</a></li>
+            <li><a href="" class="menu">Itinerary</a></li>
+            <!--<i class="bi bi-person-circle"></i>-->
+        </ul>
+    </nav>
+
+    <div class="bouncing-blobs-container">
+
+        <div class="bouncing-blobs-glass"></div>
+        <div class="bouncing-blobs">
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--blue"></div>
+            <div class="bouncing-blob bouncing-blob--light-blue"></div>
+            <div class="bouncing-blob bouncing-blob--purple"></div>
+            <div class="bouncing-blob bouncing-blob--purple"></div>
+            <div class="bouncing-blob bouncing-blob--pink"></div>
+            <div class="bouncing-blob bouncing-blob--pink"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class = "flex-container">
+    <div class = "pictures">
+        <!--<div class = "Rylee">
+            <a href = ""> <img width="200" height="300" src="Images/Rylee.jpg"></a>
+            <a href = ""><h2>Rylee's Things</h2></a>
+        </div>-->
+        <div class = "Brayden">
+            <img width="200" height="300" src="Images/Brayden.jpg">
+            <h2>Brayden's Things</h2>
+        </div>
+        <!--<div class = "Dinner">
+            <a href = ""> <img width="200" height="300" src="Images/dinner.jpg"></a>
+            <a href = ""><h2>Dinner Stuff</h2></a>
+        </div>
+        <div class = "Phone">
+            <a href = ""> <img width="300" height="200" src="Images/phone.jpg"></a>
+            <a href = ""> <h2>Phone Numbers</h2></a>
+        </div>
+        <div class = "Itinerary">
+            <a href = ""> <img width="300" height="200" src="Images/itinerary.jpg"></a>
+            <a href = ""> <h2>Itinerary for Vietnam</h2></a>
+        </div>
+        <div class = "Schedule">
+            <a href = ""> <img width="200" height="300" src="Images/schedule.jpg"></a>
+            <a href = ""> <h2> Kids Schedules</h2></a>
+        </div>-->
+    
+        <p>
+            <div class = "School"><h4>School</h4>Brayden has school from 8:15 to 2:45.
+            Before Rylee.</div>
+            <div class = "Club M"><h4>Club M</h4>Brayden has Club M after school, so you don't have to pick
+                him up until 3:00 if you want to get them at the same time. Club M room is the first
+                room on the second building to the left after entering the school yard in the back.
+            </div>
+            <div class = "Basketball"><h4>Basketball</h4>Brayden has basketball Monday night at 6:30.
+                His practice is at the same place he had baseball. The address will be on the 
+                <a href = "Contacts.html">Contacts</a> page.
+            </div>
+            <div class = "Gymnastics"><h4>Gymnastics</h4>Brayden has Gymnastics at 4:30 on thursday.
+            This means you'll have to sit with him for a bit while Rylee is doind her gymnastics.
+            Generally I bring a snack and something for him to play with like his iPad.
+        The address to Gymnastics will be in the <a href = "Contacts.html">Contacts</a> page.</div>
+            </p>
+    </div>
+    </div>
+
+
+        <!--Social Liks codings below-->
+        <!-- <a id="source-link" class="meta-link" href="https://t.me/codewith_muhilan" target="_blank">
+            <i class="fas fa-link"></i>
+            <span class="roboto-mono">Join my Telegram</span>
+        </a>
+    
+        <a id="yt-link" class="meta-link" href="https://www.youtube.com/@codewith_muhilan?sub_confirmation=1"
+            target="_blank">
+            <i class="fab fa-youtube"></i>
+            <span> Subscribe my channel</span>
+        </a>
+    
+        <a id="Fund-link" class="meta-link" href="https://www.buymeacoffee.com/codewithmuhilan"
+            target="_blank">
+            <i class="fas fa-dollar-sign"></i>
+            <span> Show your Support..❤</span>
+        </a>
+ -->
+
+    <script>
+        const MIN_SPEED = 1.5
+        const MAX_SPEED = 2.5
+
+        function randomNumber(min, max) {
+            return Math.random() * (max - min) + min
+        }
+
+        class Blob {
+            constructor(el) {
+                this.el = el
+                const boundingRect = this.el.getBoundingClientRect()
+                this.size = boundingRect.width
+                this.initialX = randomNumber(0, window.innerWidth - this.size)
+                this.initialY = randomNumber(0, window.innerHeight - this.size)
+                this.el.style.top = `${this.initialY}px`
+                this.el.style.left = `${this.initialX}px`
+                this.vx =
+                    randomNumber(MIN_SPEED, MAX_SPEED) * (Math.random() > 0.5 ? 1 : -1)
+                this.vy =
+                    randomNumber(MIN_SPEED, MAX_SPEED) * (Math.random() > 0.5 ? 1 : -1)
+                this.x = this.initialX
+                this.y = this.initialY
+            }
+
+            update() {
+                this.x += this.vx
+                this.y += this.vy
+                if (this.x >= window.innerWidth - this.size) {
+                    this.x = window.innerWidth - this.size
+                    this.vx *= -1
+                }
+                if (this.y >= window.innerHeight - this.size) {
+                    this.y = window.innerHeight - this.size
+                    this.vy *= -1
+                }
+                if (this.x <= 0) {
+                    this.x = 0
+                    this.vx *= -1
+                }
+                if (this.y <= 0) {
+                    this.y = 0
+                    this.vy *= -1
+                }
+            }
+            move() {
+                this.el.style.transform = `translate(${this.x - this.initialX}px, ${this.y - this.initialY
+                    }px)`
+            }
+        }
+
+        function initBlobs() {
+            const blobEls = document.querySelectorAll('.bouncing-blob')
+            const blobs = Array.from(blobEls).map((blobEl) => new Blob(blobEl))
+            function update() {
+                requestAnimationFrame(update)
+                blobs.forEach((blob) => {
+                    blob.update()
+                    blob.move()
+                })
+            }
+            requestAnimationFrame(update)
+        }
+
+        initBlobs()
+    </script>
+    
+</body>
+</html>

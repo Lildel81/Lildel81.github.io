@@ -1,0 +1,82 @@
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 40%;
+    background-color: rgba(79, 0, 99, 0.116);
+    border: 1%;
+    border-radius: 10%;
+    
+
+p{
+    font-size: 20px;
+    color: aliceblue;
+}    
+    
+}
+/*.frame{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}*/
+iframe[seamless] {
+    display: block;
+  }
+iframe:focus{
+    outline: none;
+}
+
+.Rylee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Brayden{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Dinner{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Itinerary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Schedule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
