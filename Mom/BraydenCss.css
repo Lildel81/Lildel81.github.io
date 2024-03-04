@@ -1,0 +1,29 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    
+    width: 50%;
+    background-color: transparent;
+    border: 1%;
+    border-radius: 10%;
+}
+.Brayden{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    
+    
+}
+.menu{
+    font-size: 20px;
+}
