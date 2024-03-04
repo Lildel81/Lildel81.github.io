@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 100px;
+    
 }
 .pictures{
     display: flex;
@@ -12,18 +12,180 @@
     align-content: center;
     flex-direction: row;
     
-    width: 50%;
+    width: 75%;
     background-color: transparent;
     border: 1%;
     border-radius: 10%;
 }
 .Brayden{
     display: flex;
-    width: 70%;
+    width: 100%;
     flex-wrap: wrap;
     
     
 }
+#braydenpic{
+    position: relative;
+    top: 0.5em;
+    left: 1em;
+    z-index: -1;
+}
 .menu{
     font-size: 20px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*.column{
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.row{margin: 0 -5px;}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}*/
+.card0{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+    position: absolute;
+    top: 4.5em;
+    left: 1em;
+    width: 1500px;
+    height: 350px;
+
+
+
+}
+.card1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+    position: absolute;
+    top: 27em;
+    left: 3em;
+    width: 200px
+}
+#fname{
+    Position: absolute;
+    top: 0em;
+    left: 17em;
+    
+
+}
+#lname{
+    position: absolute;
+    top: 2em;
+    left: 17em;
+}
+.HTWT{
+    position: relative;
+    top: -14em;
+    left: 16em;
+}
+.HTWT2{
+    position: relative;
+    top: -15.2em;
+    left: 27em;
+}
+.Bdate{
+    position: relative;
+    top: -13.8em;
+    left: 16em;
+}
+.Bdate2{
+    position: relative;
+    top: -15em;
+    left: 27em;
+}
+.Draft{
+    position: relative;
+    top: -13.6em;
+    left: 16em;
+}
+.Draft2{
+    position: relative;
+    top: -14.8em;
+    left: 27em;
+}
+.Status{
+    position: relative;
+    top: -13.6em;
+    left: 16em;
+}
+.Status2{
+    position: relative;
+    top: -14.6em;
+    left: 27em;
+}
+.Exp{
+    position: relative;
+    top: -13.4em;
+    left: 16em;
+}
+.Exp2{
+    position: relative;
+    top: -14.4em;
+    left: 27em;
+}
+.card2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+    position: absolute;
+    top: 27em;
+    left: 69em;
+    width: 20%;
+
+
+}
+.card3{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274);
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+    position: absolute;
+    top: 27em;
+    left: 17em;
+    width: 20%;
+}
+
+.card4{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+    position: absolute;
+    top: 27em;
+    left: 43em;
+    width: 20%;
+}
+.card5{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgba(38, 0, 255, 0.205);
+    z-index: 0;
+    position: absolute;
+    top: 5em;
+    left: 57em;
+    width: 20%;
 }
