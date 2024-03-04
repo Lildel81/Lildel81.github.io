@@ -164,6 +164,17 @@ body{
     left: 17em;
     width: 20%;
 }
+.BB{
+    position: relative;
+    top: -3em;
+    left: -5em;
+    z-index: 1;
+}
+.words{
+    position: relative;
+    top: -3em;
+
+}
 
 .card4{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
     padding: 16px;
