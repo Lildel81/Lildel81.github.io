@@ -1,11 +1,5 @@
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 100px;
-}
-.pictures{
+
+/*.pictures{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -16,13 +10,83 @@
     background-color: transparent;
     border: 1%;
     border-radius: 10%;
+}*/
+.rylee_Pic{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+    position: relative;
 }
 .Rylee{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+    position: absolute;
+    top: 5em;
+    left: .5em;
+    width: 96.5%;
+    height: 450px;
     display: flex;
-    width: 70%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+    
+}
+.School{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+    /*position: relative;
+    top: -2;
+    left: 20em;*/
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    
-    
+    justify-content: center;
+    width: 200px;
+    height: 410px;
+}
+.Gymnastics{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+    /*position: relative;
+    top: -2;
+    left: 20em;*/
+    width: 200px;
+    height: 410px;
+}
+.Video{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+   /* position: relative;
+    top: -2;
+    left: 20em;*/
+    width: 200px;
+    height: 410px;
+}
+.Computer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39);
+    padding: 16px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.205);
+    z-index: 0;
+    /*position: relative;
+    top: -2;
+    left: 20em;*/
+    width: 200px;
+    height: 410px;
 }
 .menu{
     font-size: 20px;
