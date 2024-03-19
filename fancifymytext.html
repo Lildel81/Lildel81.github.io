@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel = 'stylesheets' href = "Fancy.css">
+    <title>Fancify</title>
+</head>
+<body>
+
+<h1>Make my text fancy</h1>
+<fieldset>
+    <legend>Text</legend>
+<textarea id = textElement rows = "4" column = "30" placeholder="Text"></textarea>
+</fieldset>
+
+<fieldset>
+<button type = "text" id = "toFancy">BIGGER!!!</button><br>
+<input type = "radio" id = "fancyshmancy" name = 'fancyType' value = 'fancySchmancy' onchange="makeItFancy()">
+<label for="fancyshmancy">Fancy Shmancy</label><br>
+<input type = "radio" id = "boringBetty" name = "fancyType" value = "boringbetty"onchange="makeItFancy()">
+<label for="boringBetty">Boring Betty</label><br>
+<button type = "text" id = "moo" onclick="moo()">Moo!</button>
+
+
+</fieldset>
+
+<br>
+<br>
+<div id = "fancyContent"></div>
+</body>
+
+<script src = "fancifymytext.js"></script>
+</html>

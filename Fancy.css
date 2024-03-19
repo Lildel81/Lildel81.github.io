@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(18, 240, 240);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    
+}
+.verticle{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    position: relative;
+
+}
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 20%;
+    box-shadow: 10px, 10px, black;
+    
+}
+fieldset{
+        border: 2px;
+        padding: 10px;
+        margin-bottom: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    box-shadow: 10px, 10px, white;
+}
+.text{
+    border-radius: 1px, black;
+}
+.controls{
+    width: 30px;
+    height: 30px;
+    border: 1px, black
+}

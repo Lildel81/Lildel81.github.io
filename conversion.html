@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VND to USD</title>
+</head>
+<body>
+
+    <h1>Convert VND (Vietnamese Duong to US Dollars)</h1>
+    <Textarea type = "text" id = "vnd" rows = "4" column = "30" placeholder = "Enter VND currency"></Textarea><br>
+    <button id = convert onclick = convertToUSD()>Convert to usd</button>
+<br>
+<br>
+<br>
+<br>
+    <div id = conversion></div>
+
+<br>
+<br>
+</body>
+<script>
+    function convertToUSD(){
+        //alert("it works");
+    let vnd = document.getElementById('vnd').value;
+    console.log(vnd);
+    let con = vnd * 0.00004;
+    console.log(con)
+     result = document.getElementById('conversion').innerHTML = "Conversion: $"+con
+
+    }
+
+</script>
+</html>

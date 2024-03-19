@@ -1,7 +1,8 @@
 html{
-    background-image: url("https://wallpapercave.com/wp/P4LP9H0.jpg");
+    background-color: black;
     background-size: cover;
     background-repeat: none;
+    text: azure;
 }
 .flex-container{
 
@@ -40,6 +41,12 @@ nav{
     text-align: center;
 
 }
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-items: center;
+}
 
 
 
@@ -58,6 +65,7 @@ h1{
 
 p{ 
     color: whitesmoke; 
+    position: relative;
     
     font-size: 25px;
 }
