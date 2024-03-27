@@ -40,10 +40,21 @@ function makeItFancy(){
      
 }
 
-function moo(){
-
+//function moo(){
+    document.getElementById('moo').addEventListener("click", function(){
     let text = document.getElementById("textElement").value;
+    let textArea = document.getElementById("fancyContent");
+    const printContentDiv = document.getElementById("fancyContent");
     let moo = "moo";
+    let splittext = text.split(" ");
+    let finaltext = '';
+    for(let i = 0; i < splittext.length; i++){
+        splittext[i]=splittext[i]+moo;
+    }
+    finaltext=splittext.join();
+    printContentDiv.textContent = finaltext;
+    })
+
     
 
-}
+//}
